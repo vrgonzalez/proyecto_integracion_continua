@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agencia Cultural Adventures</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+
+.geeks:hover {
+    background-color: #04364A; /* Cambia este color según lo que desees */
+    color: white; /* Cambia el color del texto si es necesario */
+  }
+
+  /* Estilo para la clase 'geeks2' */
+  .geeks2:hover {
+    background-color: #176B87; /* Cambia este color según lo que desees */
+    color: white; /* Cambia el color del texto si es necesario */
+  }
+
+  /* Estilo para la clase 'geeks3' */
+  .geeks3:hover {
+    background-color: #64CCC5; /* Cambia este color según lo que desees */
+    color: white; /* Cambia el color del texto si es necesario */
+  }
+
+  /* Estilo para la clase 'geeks4' */
+  .geeks4:hover {
+    background-color: #DAFFFB; /* Cambia este color según lo que desees */
+    color:  #04364A; /* Cambia el color del texto si es necesario */
+  }
+  #boton:hover {
+    background-color: #64CCC5; /* Cambia este color según lo que desees */
+    color:  white; /* Cambia el color del texto si es necesario */
+    border-radius: 10px; /* ajusta el valor según el grado de redondeo que desees */
+    padding: 15px;
+  }
+  #boton {
+    background-color: #176B87; /* Cambia este color según lo que desees */
+    color: white;
+    border-radius: 10px; /* ajusta el valor según el grado de redondeo que desees */
+    padding: 15px;
+}
+.footer {
+    background: linear-gradient(#DAFFFB, #176B87); /* Cambia los colores según lo que desees */
+    color: white; /* Color del texto */
+    padding: 50px 0; /* Espaciado interno superior e inferior */
+  }
+  .footer-image {
+    text-align: center; /* Centrar el contenido */
+    margin-bottom: 20px; /* Espaciado entre las imágenes */
+  }
+  .image-container {
+    display: inline-block; /* Convertir en un bloque en línea */
+    position: relative; /* Establecer la posición como relativa */
+    height: 300px; /* Altura deseada para las imágenes */
+    overflow: hidden; /* Ocultar cualquier parte de la imagen que exceda la altura */
+  }
+  .image-container img {
+    width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Ajustar la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
+  }
+  .image-container button {
+    position: absolute; /* Establecer la posición como absoluta */
+    bottom: 10px; /* Ajustar la posición vertical del botón */
+    left: 50%; /* Centrar horizontalmente el botón */
+    transform: translateX(-50%); /* Alinear el botón al centro */
+  }
+
+ .btn-primary {
+    background-color: white ; /* Establecer el color de fondo como transparente */
+    border: 1px solid #176B87; /* Añadir un borde blanco para que el botón sea visible */
+    color:#176B87; /
+ }
+ .btn-primary:hover {
+    background-color: #176B87 ; /* Establecer el color de fondo como transparente */
+    border: 1px solid white; /* Añadir un borde blanco para que el botón sea visible */
+    color:white; /
+ }
+
+        .testimonials {
+          padding: 20px;
+          background-color: #f0f0f0; /* Color de fondo del área de testimonios */
+        }
+      
+        .images {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      
+        .image-row {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px; /* Espacio entre las filas de imágenes */
+        }
+      
+        .image-row img {
+          width: 48%; /* Ajusta el ancho de las imágenes para que haya espacio entre ellas */
+        }
+      
+        /* Estilos adicionales según sea necesario */
+  </style>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Bootstrap" width="50" height="40">
+                  </a>
+                </div>
+              </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="informacion1.html">Informacion</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destinos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Europa</a></li>
+                  <li><a class="dropdown-item" href="#">Africa</a></li>
+                  <li><a class="dropdown-item" href="#">Asia</a></li>
+                  <li><a class="dropdown-item" href="#">Norte America</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Colombia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pagContacto.html">Contactenos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <a class="nav-link active" id="boton" aria-current="page" href="Login.html">Iniciar sesiòn</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Carrusel1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 >Suscríbete para recibir inspiración y ofertas exclusivas.</h5>
+                <a class="nav-link active" id="boton" aria-current="page" href="Login.html">Reservar ahora</a>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/machu-picchu-peru-tours.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Houses-on-water-top-warmth-night-lights-resort_1920x1080.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+            <div class="geeks">
+              <h1 class="text-center">10+</h1>
+              <h3 class="text-center">Usuarios</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+            <div class="geeks2">
+              <h1 class="text-center">12K</h1>
+              <h3 class="text-center">Destinos</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+            <div class="geeks3">
+              <h1 class="text-center">07+</h1>
+              <h3 class="text-center">Años de experiencia</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+            <div class="geeks4">
+              <h1 class="text-center">5.0</h1>
+              <h3 class="text-center">Calificacion</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="footer-image">
+              <div class="image-container">
+                <img src="img/Hoteles.jpg" alt="Imagen 1">
+                <button class="btn btn-primary">Hoteles</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer-image">
+              <div class="image-container">
+                <img src="img/Tours.jpg" alt="Imagen 2">
+                <button class="btn btn-primary">Tours</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer-image">
+              <div class="image-container">
+                <img src="img/Destinos.jpg" alt="Imagen 3">
+                <button class="btn btn-primary">Destinos</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="testimonials">
+                <i class="bi bi-person-circle"></i>
+                
+              <!-- Espacio para testimonios -->
+              <h2>Testimonios</h2><br>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+              <p>Camilo A: EXCELENTE</p>
+              <p>Excelente atencion al cliente, permite facilidad de pagos y tanto los planes que ofrecen como los hoteles son comodos, recomendado</p>
+              <hr>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+              <p>Alejandra D: EXCELENTE</p>
+              <p>El servicio fue excepcional desde el momento en que llegamos. El personal del hotel nos trató como familia y nos hizo sentir bienvenidos en todo momento</p>
+              <hr>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+              <p>Santiago G: EXCELENTE</p>
+              <p>La actividad de aventura que hicimos fue la mejor parte del viaje. Desde el rafting en aguas bravas hasta el paracaidismo, ¡fue una adrenalina pura!</p>
+              <hr>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+              <p>Alexandra R: AGRADABLE</p>
+              <p>¡Una experiencia gastronómica inolvidable! Probamos platos auténticos y deliciosos que nos dejaron con ganas de más. ¡No puedo esperar para volver!</p></div>
+          </div>
+          <br>
+          <div class="col-md-6">
+            <div class="images">
+              <div class="image-row">
+                <!-- Imagen arriba izquierda -->
+                <img src="img/hombre.jpg" alt="Imagen 1">
+                <!-- Imagen arriba derecha -->
+                <img src="img/kayak.jpeg" alt="Imagen 2">
+              </div>
+              <div class="image-row">
+                <!-- Imagen abajo izquierda -->
+                <img src="img/Eiffel-Tower-in-Autumn.jpg" alt="Imagen 3">
+                <!-- Imagen abajo derecha -->
+                <img src="img/mujer-viajera1.jpg" alt="Imagen 4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      
+      
+      
+      <footer class="footer bg-dark text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+                <br>
+              <h3>Información de contacto</h3>
+              <p>Dirección: 123 Calle Principal, Ciudad</p>
+              <p>Teléfono: 123-456-7890</p>
+              <p>Correo electrónico: info@example.com</p>
+            </div>
+            <div class="col-md-6">
+                <br>
+              <h3>Enlaces útiles</h3>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="informacion.html">Acerca de nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="pagContacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>Derechos de autor &copy; 2024 Cultural Adventures</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    </body>
+</html>
