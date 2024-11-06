@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login y Create User</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, #2ECFF2, #176B87, #E5E5E5);
+    }
+
+    .container {
+        display: flex;
+        width: 80%;
+        height: 80vh; /* Alto del contenedor: 80% del viewport height */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .left {
+        flex: 0 0 30%; /* Ancho del .left: 30% del contenedor */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right {
+        flex: 1;
+        background: linear-gradient(to bottom,rgba(46, 207, 242, 0.5),rgba(255, 255, 255, 0.5));
+        align-items: center;
+        justify-content: space-around; /* Espaciado horizontal uniforme */
+        text-align: center; /* Centrado horizontal */
+
+    }
+
+    .options {
+        margin-bottom: 20px;
+        margin-left: auto; /* Mover las opciones hacia el lado derecho */
+        text-align: right; /* Alinear texto a la izquierda dentro del contenedor */
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+
+    .options a {
+        margin-left: 20px; /* Espacio entre las opciones */
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        align-items: center;
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .form-group button {
+        width: 53%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #2ECFF2;
+        color: white;
+        cursor: pointer;
+    }
+
+    .form-group button:hover {
+        background-color: #176B87;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        flex-direction: column; /* Alinear elementos verticalmente */
+        align-items: center; /* Centrar elementos horizontalmente */
+        margin-top: 12%; /* Mover hacia abajo un 60% */
+        color: #FFFFFF;
+    }
+
+    p{
+        color: gray;
+        font-size: smaller;
+    }
+
+@media screen and (max-width: 768px) {
+    body{
+        background: linear-gradient(to bottom, #E5E5E5, #2ECFF2, #176B87, #E5E5E5);
+        margin-bottom: 50px;
+    }
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            width: 100%; /* Ajustar el ancho de los elementos al 100% */
+        }
+
+        .options {
+            text-align: center; /* Centrar las opciones en dispositivos pequeños */
+            margin-top: 20px; /* Agregar margen superior en dispositivos pequeños */
+
+        }
+
+        .form-group input,
+        .form-group button {
+            width: 90%; /* Ajustar el ancho de los inputs y botones en dispositivos pequeños */
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <img src="img/login.jpg.jpeg"  alt="Imagen">
+    </div>
+    <div class="right">
+        <div class="options">
+            <a href="Login.html">Login</a>
+            <a href="Createuser.html">Crear cuenta</a>
+            <a href="index.html">Inicio</a>
+        </div>
+    <h2 class="Login">Bienvenido</h2>
+    <p> ¡Estamos listos para recibirte!</p>
+    <div class="form-group">
+        <input type="text" id="username" name="username" placeholder="Ingrese su nombre de usuario">
+    </div>
+    <div class="form-group">
+        <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
+    </div>
+    <div class="form-group">
+        <a href="#">¿Olvido su contraseña?</a>
+    </div>
+    <div class="form-group">
+        <button type="submit">Iniciar sesión</button>
+    </div>
+</div>
+</div>
+<br>
+</body>
+</html>
