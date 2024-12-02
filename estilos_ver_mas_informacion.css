@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo del header */
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0px; 
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(4, 54, 74, 0.50) 0%, rgb(23, 107, 135,0.50) 100%), url(../img/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.despliegue{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vh;
+    height: 100%;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3 ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.descripcion{
+    font-weight: 25px;
+    font-size: 25px;
+}
+
+/* estilo de reseñas */
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(5, 18, 44);
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.gallery{
+    background: #faf7f7;
+}
+
+.contendor-galeria{
+    display: flex ;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+.img-galeria {
+    width: 24.5%;
+    border-radius: 30px;
+    display: box;
+    margin-bottom: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.Blog{
+    background: rgba(243, 242, 202, 0.932);
+}
+
+
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cont-expert img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 200;
+}
+
+/* Pie de pagina */
+
+footer{
+    background: linear-gradient(to bottom, #04364a, #fafdfd);
+    padding-bottom: 0.1px;   
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #ffffff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+

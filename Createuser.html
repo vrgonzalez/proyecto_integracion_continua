@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login y Create User</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, #176B87, #3D8FA0, #828282);
+    }
+
+    .container {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+        flex: 0 0 50%; /* Ancho del .left: 30% del contenedor */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right {
+        flex: 1;
+        align-items: center;
+        justify-content: space-around; /* Espaciado horizontal uniforme */
+        text-align: center; /* Centrado horizontal */
+        margin-top: 7%;
+
+    }
+
+    .options {
+        margin-bottom: 20px;
+        margin-left: auto; /* Mover las opciones hacia el lado derecho */
+        text-align: right; /* Alinear texto a la izquierda dentro del contenedor */
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+
+    .options a {
+        margin-left: 20px; /* Espacio entre las opciones */
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+
+
+    .form-group input {
+        width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+    }
+
+    .form-group button {
+        align-items: center;
+        width: 103%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #2ECFF2;
+        color: white;
+        cursor: pointer;
+    }
+
+    .form-group button:hover {
+        background-color: #176B87;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    h2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: white;
+        }
+
+    p{
+        color: white;
+        font-size: smaller;
+    }
+
+@media screen and (max-width: 768px) {
+    body{
+        margin-bottom: 50px;
+    }
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            width: 100%; /* Ajustar el ancho de los elementos al 100% */
+        }
+        .right{
+        
+            width: 100%;
+        }
+
+        .options {
+            text-align: center; /* Centrar las opciones en dispositivos pequeños */
+            margin-top: 20px; /* Agregar margen superior en dispositivos pequeños */
+
+        }
+
+        .form-group input,
+        .form-group button {
+            width: 90%; /* Ajustar el ancho de los inputs y botones en dispositivos pequeños */
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <div class="options">
+            <a href="Login.html">Login</a>
+            <a href="#">Crear cuenta</a>
+        </div>
+        <h2>Registro de Nuevo Usuario</h2>
+        <div class="form-group">
+            <input type="text" id="username" name="username" placeholder="Nombre de Usuario">
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Correo Electrónico">
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+        </div>
+        <div class="form-group">
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar Contraseña">
+        </div>
+        <div class="form-group">
+            <button type="submit">Registrarse</button>
+        </div>
+        <div class="form-group">
+            <p>¿Ya tienes una cuenta? <a href="#">Iniciar Sesión</a></p>
+        </div>
+    </div>
+    <div class="right">
+        <h2>Tu próximo viaje comienza aquí</h2>
+        <p>Suscríbete para recibir inspiración y ofertas exclusivas.</p>
+</div>
+</div>
+<br>
+</body>
+</html>
