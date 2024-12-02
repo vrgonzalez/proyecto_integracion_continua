@@ -1,6 +1,12 @@
 pipeline {
     agent any
     stages {
+        stage('Checkout SCM') {
+            steps {
+                // Hacer checkout desde tu repositorio de GitHub
+                git url: 'https://github.com/vrgonzalez/proyecto_integracion_continua.git', branch: 'master', credentialsId: 'jira-rest-api'
+            }
+        }
         stage('Deploy - Staging') {
             when {
                 branch 'master'
@@ -10,7 +16,7 @@ pipeline {
             }
             post {
                 always {
-                    jiraSendDeploymentInfo environmentId: 'us-stg-1', environmentName: 'us-stg-1', environmentType: 'staging', site: 'vrgonzalez63.atlassian.net'
+                    jiraSendDeploymentInfo environmentId: 'us-stg-1', environmentName: 'staging', environmentType: 'staging'
                 }
             }
         }
@@ -23,7 +29,7 @@ pipeline {
             }
             post {
                 always {
-                    jiraSendDeploymentInfo environmentId: 'us-prod-1', environmentName: 'us-prod-1', environmentType: 'production', site: 'vrgonzalez63.atlassian.net'
+                    jiraSendDeploymentInfo environmentId: 'us-prod-1', environmentName: 'production', environmentType: 'production'
                 }
             }
         }
