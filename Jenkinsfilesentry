@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+
+    environment {
+        SENTRY_DSN = credentials('sentry-dsn')  // Usar las credenciales almacenadas en Jenkins
+    }
+
+    stages {
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    docker.build('myapp')
+                }
+            }
+        }
+
+        stage('Run Tests and Capture Errors') {
+            steps {
+                script {
+                    docker.image('myapp').inside {
+                        sh 'npm run test'  // Ejecuta los tests
+                    }
+                }
+            }
+        }
+
+        stage('Push to Docker Registry') {
+            steps {
+                script {
+                    docker.withRegistry('https://myregistry.com', 'my-docker-credentials') {
+                        docker.image('myapp').push()
+                    }
+                }
+            }
+        }
+    }
+}
